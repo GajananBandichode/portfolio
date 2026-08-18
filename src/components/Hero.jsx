@@ -1,3 +1,5 @@
+import heroImage from "../assets/img/1000038363.jpg";
+
 function Hero() {
   return (
     <section className="hero" id="home">
@@ -11,7 +13,6 @@ function Hero() {
           <p className="hero-intro">
             HELLO, I'M
           </p>
-
 
           {/* NAME */}
 
@@ -27,26 +28,21 @@ function Hero() {
 
           </h1>
 
-
           {/* TITLE */}
 
           <h2 className="hero-title">
             Driven to Learn. Ready to Deliver
           </h2>
 
-
           {/* SMALL LINE */}
 
           <div className="title-line"></div>
-
 
           {/* DESCRIPTION */}
 
           <p className="hero-description">
             Passionate about technology and Artificial Intelligence
-           
           </p>
-
 
           {/* BUTTONS */}
 
@@ -58,7 +54,6 @@ function Hero() {
             >
               Contact Me
             </a>
-
 
             <a
               href="#projects"
@@ -79,7 +74,7 @@ function Hero() {
           <div className="image-frame">
 
             <img
-              src="/src/assets/img/1.jpg"
+              src={heroImage}
               alt="Gajanan Bandichode"
               className="hero-image"
             />
