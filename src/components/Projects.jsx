@@ -1,9 +1,12 @@
+import projectImage1 from "../assets/img/8.png";
+import projectImage2 from "../assets/img/9.png";
+
 const projects = [
   {
     title: "Portfolio Website",
     description:
       "Portfolio website showcasing skills, projects, and achievements.",
-    image: "/src/assets/img/8.png",
+    image: projectImage1,
     link: "#home",
     source: "https://github.com/GajananBandichode",
   },
@@ -12,7 +15,7 @@ const projects = [
     title: "Online Learning Platform",
     description:
       "Online learning platform with live classes and payments.",
-    image: "/src/assets/img/9.png",
+    image: projectImage2,
     link:
       "https://gajananbandichode.github.io/Online-Learning-Platform/loginform.html",
     source:
@@ -43,9 +46,11 @@ function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
+                className="project-img"
               />
             </div>
 
+            {/* Project Content */}
             <div className="project-content">
 
               <h3>{project.title}</h3>
@@ -59,7 +64,11 @@ function Projects() {
                   type="button"
                   className="project-view"
                   onClick={() => {
-                    window.open(project.link, "_blank");
+                    window.open(
+                      project.link,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
                   }}
                 >
                   VIEW
@@ -70,7 +79,11 @@ function Projects() {
                   type="button"
                   className="project-source"
                   onClick={() => {
-                    window.open(project.source, "_blank");
+                    window.open(
+                      project.source,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
                   }}
                 >
                   SOURCE CODE
